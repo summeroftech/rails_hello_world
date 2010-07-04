@@ -1,0 +1,45 @@
+--- 
+dependencies: 
+  ruby-debug: 
+    group: 
+    - :development
+    version: ">= 0"
+  rails: 
+    group: 
+    - :default
+    version: = 2.3.8
+  mysql: 
+    group: 
+    - :default
+    version: ">= 0"
+specs: 
+- rake: 
+    version: 0.8.7
+- activesupport: 
+    version: 2.3.8
+- rack: 
+    version: 1.1.0
+- actionpack: 
+    version: 2.3.8
+- actionmailer: 
+    version: 2.3.8
+- activerecord: 
+    version: 2.3.8
+- activeresource: 
+    version: 2.3.8
+- columnize: 
+    version: 0.3.1
+- linecache: 
+    version: "0.43"
+- mysql: 
+    version: 2.8.1
+- rails: 
+    version: 2.3.8
+- ruby-debug-base: 
+    version: 0.10.3
+- ruby-debug: 
+    version: 0.10.3
+hash: 25e1dd640b42d7cc1aaac8c2e221c040e6d1922c
+sources: 
+- Rubygems: 
+    uri: http://gemcutter.org
