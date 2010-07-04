@@ -14,7 +14,7 @@ class WorldsControllerTest < ActionController::TestCase
 
   test "should create world" do
     assert_difference('World.count') do
-      post :create, :world => { }
+      post :create, :world => { :name => 'Neptune', :distance => 48934783 }
     end
 
     assert_redirected_to world_path(assigns(:world))
@@ -31,7 +31,7 @@ class WorldsControllerTest < ActionController::TestCase
   end
 
   test "should update world" do
-    put :update, :id => worlds(:one).to_param, :world => { }
+    put :update, :id => worlds(:one).to_param, :world => { :name => 'Mercury', :distance => 8934783 }
     assert_redirected_to world_path(assigns(:world))
   end
 
