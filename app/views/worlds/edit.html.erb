@@ -1,0 +1,20 @@
+<h1>Editing world</h1>
+
+<% form_for(@world) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :distance %><br />
+    <%= f.text_field :distance %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @world %> |
+<%= link_to 'Back', worlds_path %>

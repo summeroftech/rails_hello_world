@@ -1,0 +1,13 @@
+<p>
+  <b>Name:</b>
+  <%=h @world.name %>
+</p>
+
+<p>
+  <b>Distance:</b>
+  <%=h @world.distance %>
+</p>
+
+
+<%= link_to 'Edit', edit_world_path(@world) %> |
+<%= link_to 'Back', worlds_path %>
