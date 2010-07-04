@@ -5,3 +5,6 @@
 #   
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Major.create(:name => 'Daley', :city => cities.first)
+World.create :name => 'Earth', :distance => 0
+World.create :name => 'Mars', :distance => 2384733
+World.create :name => 'Venus', :distance => 3032473
