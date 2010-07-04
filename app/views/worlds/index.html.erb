@@ -1,22 +1,11 @@
-<h1>Listing worlds</h1>
+<h1>Known worlds</h1>
 
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Distance</th>
-  </tr>
+<ul>
+  <% @worlds.each do |world| %>
+    <li><%= link_to world.name, [:edit, world] %> (<%= world.distance %> m)</li>
+  <% end %>
+</ul>
 
-<% @worlds.each do |world| %>
-  <tr>
-    <td><%=h world.name %></td>
-    <td><%=h world.distance %></td>
-    <td><%= link_to 'Show', world %></td>
-    <td><%= link_to 'Edit', edit_world_path(world) %></td>
-    <td><%= link_to 'Destroy', world, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
-
-<%= link_to 'New world', new_world_path %>
+<p>
+  <%= link_to 'New World', new_world_path %>
+</p>
